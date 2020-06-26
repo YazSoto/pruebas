@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Principal</title>
+	
+	<script>
+    var direcciones = new Array("2.html", "3.html", "4.html", "5.html", "6.html", "7.html", "8.html", "9.html", "10.html", "11.html", "12.html", "13.html", "14.html", "15.html", "16.html", "17.html", "18.html", "19.html", "20.html", "21.html", "22.html", "23.html", "24.html", "25.html", "26.html", "27.html", "28.html", "29.html", "30.html", "31.html", "32.html", "33.html", "34.html", "35.html", "36.html", "37.html", "38.html", "39.html", "40.html")
+    function enlaceAleatorio(){
+       aleat = Math.random() * direcciones.length
+       aleat = Math.floor(aleat)
+       window.location=direcciones[aleat]
+    }
+</script>
+	
+	<link rel="stylesheet" href="estilovideo.css">
+	
+	<link rel="stylesheet" href="estiloboton.css">
+	<style type="text/css">
+	.primer {
+    background-color: #E4E0CB;
+    position: absolute;
+    left: 1249px;
+    top: 52px;
+    width: 486px;
+    height: 77px;
+    color: #000000;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-size: 16px;
+}
+    </style>
+</head>
+
+<body>
+	
+
+<div class="main"></div>
+<video id="video-background" muted="muted" autoplay="autoplay" loop="loop" >
+  <source src="Video1.mp4">
+</video>
+	
+	<audio preload="auto" autoplay="autoplay" loop="loop" >
+  <source src= "Sonido.mp3" 
+	type= "audio/mpeg"/>
+</audio>
+	<a href="javascript:enlaceAleatorio()"><div class="primer">
+	  <p>Todos los días son iguales, no puedo salir de este lugar ni  de mis pensamientos.</p>
+</div></a>
+	
+	
+	
+	
+</body>
+</html>
